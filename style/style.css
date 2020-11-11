@@ -11,11 +11,42 @@ li {
   background-color: #f72210;
 }
 
+.border-box {
+  width: 0;
+  height: 0;
+  border-top: 15px solid #f72210;
+  border-left: 14px solid transparent;
+  margin-left: 20px;
+}
+
+.small-box {
+  width: 100px;
+  height: 15px;
+  background-color: #f72210;
+  position: absolute;
+  right: 15px;
+}
+
 /* Second-nav */
 
 .second-nav {
   height: 40px;
 }
+
 .second-nav ul {
   width: 90%;
+}
+
+/* Third nav */
+
+.third-nav ul {
+  font-size: 14px;
+}
+
+.red-hover {
+  color: gray;
+}
+
+.red-hover:hover {
+  color: red;
 }
