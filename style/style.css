@@ -1,0 +1,16 @@
+/* General style */
+li {
+  list-style: none;
+}
+
+/* Start with Header Area */
+
+/* First navbar */
+
+.first-nav {
+  background-color: #f72210;
+}
+
+input {
+  outline-style: none;
+}
