@@ -13,6 +13,9 @@ li {
 
 /* Second-nav */
 
+.second-nav {
+  height: 40px;
+}
 .second-nav ul {
   width: 90%;
 }
