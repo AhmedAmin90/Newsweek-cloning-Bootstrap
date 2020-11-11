@@ -58,6 +58,7 @@ li {
 
 .red-hover:hover {
   color: red;
+  text-decoration: none;
 }
 
 /* Start on Main body  */
@@ -99,4 +100,8 @@ li {
 .large-text-link:hover {
   color: black;
   text-decoration: underline #f72210;
+}
+
+.tred-issue a {
+  color: black;
 }
