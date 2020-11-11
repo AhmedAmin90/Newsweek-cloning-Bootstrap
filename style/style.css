@@ -11,6 +11,8 @@ li {
   background-color: #f72210;
 }
 
-input {
-  outline-style: none;
+/* Second-nav */
+
+.second-nav ul {
+  width: 90%;
 }
