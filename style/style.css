@@ -36,7 +36,7 @@ li {
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 20px;
   height: fit-content;
   transform: none;
   align-items: center;
@@ -89,11 +89,6 @@ li {
 
 .second-nav ul {
   width: 90%;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
 }
 
 /* Third nav */
@@ -354,17 +349,11 @@ footer ul li {
   display: none;
 }
 
+.sticky-nav-bar.hidden {
+  display: none;
+}
+
 .fa-bars {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
-}
-
-.btn {
-  white-space: nowrap;
-}
-
-@media screen and (max-width: 992px){
-  .hidden {
-    display: flex;
-  }
 }
