@@ -8,9 +8,18 @@ li {
   background-color: #ffffff;
 }
 
+.card {
+  overflow: hidden;
+}
+
 .card-text {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
+}
+
+.card-img-top.bigger {
+  height: 300px;
+  width: 480px;
 }
 
 .underline-none:hover {
@@ -185,4 +194,54 @@ li {
 
 .small-text {
   font-size: 12px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.title h1 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.title img {
+  background-color: #f72210;
+  width: 28px;
+  margin-right: 10px;
+}
+
+.title-orange {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #f72210;
+  font-size: 24px;
+}
+
+.title-orange h1 {
+  font-size: inherit;
+}
+
+.col-md-6.image {
+  background-image: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-danger {
+  background-color: #f61602;
+  text-transform: uppercase;
+}
+
+.moved {
+  transform: translateY(-90%);
+  margin-left: 40px;
+}
+
+.limit-heigth {
+  height: 300px;
 }
