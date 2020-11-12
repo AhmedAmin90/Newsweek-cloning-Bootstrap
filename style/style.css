@@ -367,16 +367,4 @@ footer ul li {
   .hidden {
     display: flex;
   }
-  footer > div:first-child {
-    display: block;
-  }
-
-  footer > div:first-child > div:first-child {
-    display: block;
-  }
-
-  footer span {
-    display: block;
-  }
-
 }
