@@ -352,3 +352,8 @@ footer ul li {
 .sticky-nav-bar.hidden {
   display: none;
 }
+
+.fa-bars {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+}

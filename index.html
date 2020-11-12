@@ -11,7 +11,7 @@
   <title>NewsWeek</title>
 </head>
 
-<body onscroll="handleScroll()">
+<body onscroll="handleScroll()" onresize="onResize()">
   <nav id="nav" class="hidden sticky-nav-bar">
     <svg version="1.1" width="250" height="30" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 396 60"
@@ -334,7 +334,7 @@
         <!-- First small row -->
         <a href="#" class="font-weight-bold text-muted my-2 underline-none">MY TURN</a>
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <a href="#" class="font-weight-bold card-link text-muted small-text-link">We Moved To Canada in 2016 After
@@ -342,7 +342,7 @@
                 Returning'</a>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <a href="#" class="font-weight-bold card-link text-muted small-text-link">We Moved To Canada in 2016 After
@@ -350,7 +350,7 @@
                 Returning'</a>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <a href="#" class="font-weight-bold card-link text-muted small-text-link">We Moved To Canada in 2016 After
@@ -364,7 +364,7 @@
 
         <a href="#" class="font-weight-bold text-muted mb-2 mt-5 underline-none">CULTURE & TRAVEL</a>
         <div class="row">
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <div class="card-img-overlay">
@@ -375,7 +375,7 @@
               In Photos: Celebrations Over Biden Victory in Streets Across
               U.S.</a>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <div class="card-img-overlay">
@@ -386,7 +386,7 @@
               In Photos: Celebrations Over Biden Victory in Streets Across
               U.S.</a>
           </div>
-          <div class="col">
+          <div class="col-md-4">
             <div class="card border-0">
               <img src="/images/card-small-img.jpg" alt="small-img" class="card-img-top" />
               <div class="card-img-overlay">
@@ -661,7 +661,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 offset-md-3">
+          <div class="col-md-6 offset-md-3 col-lg-12 offset-lg-0">
             <div class="sponsored">
               <p class="text-primary mt-3 ml-3 mb-1 font-weight-bold">
                 SPONSORED INSIGHT
@@ -1404,9 +1404,11 @@
   <!-- Bootstrap links -->
   <script type="text/javascript">
     let nav
-    if (window.screen.width < 992) {
-      navBar = document.getElementById('nav')
-      navBar.className = "sticky-nav-bar"
+    let onResize = () => {
+      if (window.screen.width < 992) {
+        navBar = document.getElementById('nav')
+        navBar.className = "sticky-nav-bar"
+      }
     }
     let handleScroll = () => {
       navBar = document.getElementById('nav')
@@ -1418,6 +1420,7 @@
           navBar.className = "hidden sticky-nav-bar"
       }
     }
+    onResize()
   </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
