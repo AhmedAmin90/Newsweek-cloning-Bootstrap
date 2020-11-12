@@ -25,7 +25,7 @@ We cloned this [Newsweek](https://www.newsweek.com/) page, with applying these i
 
 Here you will find a Live Demo page, any comment is well recieved.
 
-[Live Demo Link]()
+[Live Demo Link](https://ahmedamin90.github.io/Newsweek-cloning-Bootstrap/)
 
 ## Authors
 
@@ -47,7 +47,7 @@ Please feel free to contact us in any time:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/AhmedAmin90/Newsweek-cloning-Bootstrap/issues).
 
 ## Show your support
 
