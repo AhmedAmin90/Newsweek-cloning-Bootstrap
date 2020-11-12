@@ -1403,13 +1403,19 @@
   </footer>
   <!-- Bootstrap links -->
   <script type="text/javascript">
+    let nav
+    if (window.screen.width < 992) {
+      navBar = document.getElementById('nav')
+      navBar.className = "sticky-nav-bar"
+    }
     let handleScroll = () => {
-      let navBar = document.getElementById('nav')
+      navBar = document.getElementById('nav')
       let scroll = window.scrollY
       if (scroll > 300) {
         navBar.className = "sticky-nav-bar"
       } else {
-        navBar.className = "hidden sticky-nav-bar"
+        if (window.screen.width >= 992)
+          navBar.className = "hidden sticky-nav-bar"
       }
     }
   </script>
