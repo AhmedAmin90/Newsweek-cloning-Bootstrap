@@ -357,3 +357,25 @@ footer ul li {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.btn {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 992px){
+  .hidden {
+    display: flex;
+  }
+  footer > div:first-child {
+    display: block;
+  }
+
+  footer > div:first-child > div:first-child {
+    display: block;
+  }
+
+  footer span {
+    display: block;
+  }
+
+}
