@@ -29,6 +29,36 @@ li {
 
 /* Start with Header Area */
 
+/* Sticky navbar */ 
+
+.sticky-nav-bar {
+  background-color: #f72210;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: fit-content;
+  transform: none;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  animation: mymove 0.2s ease-in-out;
+}
+
+.sticky-nav-bar svg {
+  fill: white;
+}
+
+@keyframes mymove {
+  from {
+      top: -100px;
+  }
+  to {
+      top: 0px;
+  }
+}
+
 /* First navbar */
 
 .first-nav {
@@ -313,4 +343,12 @@ footer ul {
 
 footer ul li {
   font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticky-nav-bar.hidden {
+  display: none;
 }
